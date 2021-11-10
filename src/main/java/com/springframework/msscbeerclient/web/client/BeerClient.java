@@ -37,6 +37,7 @@ public class BeerClient {
     }
 
     public void updateBeer(BeerDto beerDto){
+
         restTemplate.put(apihost + BEER_PATH + beerDto.getBeerId(), beerDto);
     }
 
